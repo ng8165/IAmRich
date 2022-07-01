@@ -10,13 +10,13 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         ZStack {
-            Color(uiColor: .systemBlue)
+            Color(.systemBlue)
                 .edgesIgnoringSafeArea(.all)
             
             VStack {
-                Text("I am Rich")
+                Text("I'm rich")
                     .font(.system(size: 50))
-                    .fontWeight(.black)
+                    .fontWeight(.bold)
                     .foregroundColor(Color.white)
                 
                 Image("diamond")
@@ -30,6 +30,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView().previewDevice(nil)
     }
 }
